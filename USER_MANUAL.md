@@ -2,7 +2,7 @@
 
 ## For Everyone
 
-Welcome to NEXUS — a multi-agent AI platform where specialist AI agents work together to solve your problems. Think of it like having a team of expert assistants at your fingertips: a lawyer, an accountant, a travel agent, a tutor, a researcher, and more — all working together, all remembering your preferences, and all free to use.
+Welcome to NEXUS — a multi-agent AI platform where specialist AI agents work together to solve your problems. Think of it like having a team of expert assistants: a lawyer, an accountant, a travel agent, a tutor, a researcher, and more — all coordinating on a shared memory layer to execute tasks.
 
 ---
 
@@ -78,7 +78,7 @@ Everything is saved to your personal memory
 Answer appears in the chat
 ```
 
-You can actually **watch this happen in real-time** in the Orchestration Playground on the Pricing page. It's like watching a control room where different experts work on your problem simultaneously.
+You can actually **watch this happen in real-time** in the Orchestration Playground in the user interface. It's like watching a control room where different experts work on your problem simultaneously.
 
 ### The Context Graph (Your Personal Memory)
 
@@ -304,8 +304,8 @@ Requirements:
 
 ## FAQ
 
-**Is NEXUS really free?**
-Yes. NEXUS is free with a login and always will be. No tiers, no paywalls, no usage limits for logged-in users. Anonymous users get 3 messages/day.
+**Is NEXUS free?**
+Yes. NEXUS is an open-source project and is completely free to self-host and run locally.
 
 **What makes NEXUS different from ChatGPT?**
 ChatGPT is a single AI model. NEXUS uses multiple specialist AI agents that work together in parallel. When you submit a complex goal, a planner decomposes it and dispatches the right experts simultaneously — a lawyer, an accountant, and a career coach, for example — then merges their findings.
@@ -346,11 +346,7 @@ NEXUS routes requests through OpenRouter, which provides access to dozens of mod
 
 ## Troubleshooting
 
-**The chat is not responding**
-
-- Check your internet connection
-- Try refreshing the page
-- If you're not logged in, check your daily message limit (3/day for anonymous users)
+- If using a local model, verify that Ollama or your backend server is running.
 
 **The orchestrator returned an error**
 

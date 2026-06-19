@@ -41,7 +41,7 @@
 
 ### ✦ 100% Local & Private by Design
 
-NEXUS is built from the ground up as a **local-first, self-hosted platform**. Unlike every major AI platform, you can run NEXUS entirely on your own machine — no cloud dependency, no data sent to third parties, no vendor lock-in.
+NEXUS is built from the ground up as a **local-first, self-hosted platform**. It is designed to run entirely on your own hardware, ensuring complete privacy, zero external cloud dependencies, and no vendor lock-in.
 
 | What "Local-First" Means | How NEXUS Delivers |
 |---|---|
@@ -373,19 +373,9 @@ Merged briefing streamed back to Slack via your local bridge
 
 ## ✦ Quick Start
 
-### Option 1: Try the Web App (Quickest)
+### Option 1: Self-Host with Docker (Recommended)
 
-1. **Visit** the NEXUS homepage
-2. **Choose an agent** from the sidebar (Legal Helper, Stock Broker, etc.) or just type a complex goal
-3. **Watch agents work** — responses stream in real-time with live execution trace
-4. **Login** for unlimited access (10 messages/day without login)
-5. **Connect Slack** from Settings → Notifications to get proactive alerts
-
-> The hosted version uses OpenRouter for LLMs. For full privacy and local control, use Option 2.
-
-### Option 2: Self-Host with Docker (Recommended)
-
-Get the full local experience — all data stays on your machine:
+Get the full local, private experience — all data stays on your machine:
 
 ```bash
 # 1. Install Docker & Docker Compose
@@ -410,6 +400,16 @@ docker compose up -d
 ```
 
 Open `http://localhost:3000` in your browser. **That's it. You're running your own local multi-agent AI platform.**
+
+### Option 2: Try the Hosted Demo (Sandbox Playground)
+
+1. **Visit** the public demo at [saarlabs.in](https://saarlabs.in) (hosted playground for quick testing)
+2. **Choose an agent** from the sidebar (Legal Helper, Stock Broker, etc.) or type a complex goal
+3. **Watch agents work** — responses stream in real-time with live execution trace
+4. **Authenticate** if you want to save your conversation history, or self-host your own instance for unlimited private access
+5. **Connect Slack** from Settings → Notifications to test proactive alerts
+
+> The hosted sandbox demo uses OpenRouter for LLMs. For full privacy and offline execution, use Option 1.
 
 ### Option 3: Local Development (Full Control)
 
@@ -483,7 +483,7 @@ docker compose up
 | `POST` | `/api/chat` | Chat with a specialist agent (SSE streaming). Header: `X-Persona` |
 | `POST` | `/api/orchestrate` | Multi-agent orchestration — dispatches specialists in parallel (SSE) |
 | `POST` | `/api/image` | Generate an AI image from a text prompt |
-| `GET` | `/api/stats` | Public platform statistics |
+| `GET` | `/api/stats` | Local execution and usage statistics |
 
 ### Context Graph & Memory (all local)
 
@@ -523,7 +523,7 @@ docker compose up
 | **`/docs` page** | Full user guide with Simple & Technical modes — agents, orchestrator, memory, local setup, Slack integration |
 | **`/integration` page** | Complete Slack × OpenClaw interactive guide with live flow simulator |
 | **`README.md`** | *(you are here)* — platform overview, architecture, quick start, local setup |
-| **`NEXUSV3.0.md`** | Complete product strategy — persona definitions, market positioning (internal doc) |
+| **`NEXUSV3.0.md`** | Detailed specifications, architecture design, and persona configurations |
 | **`USER_MANUAL.md`** | Detailed user manual for end-users |
 | **`OPENCLAW_SETUP.md`** | Deployment guide for the OpenClaw Slack bridge |
 | **`openclaw/SETUP.md`** | Technical setup instructions for the OpenClaw agent |
@@ -545,17 +545,17 @@ docker compose up
 
 ## ✦ Repository & Open Source
 
-This repository is currently under active development and being prepared for public release under the **MIT License**.
+This project is released under the **MIT License** and is fully open-source.
 
-**Coming soon:**
-- [ ] Public repository launch with contributor guidelines
+**Roadmap & Next Steps:**
+- [ ] Contributor guidelines and community issues
 - [ ] Enhanced self-hosting documentation
-- [ ] One-command installer (curl | sh)
+- [ ] One-command installer (`curl | sh`)
 - [ ] Plugin system for custom personas
 - [ ] CLI tool for headless operation
 - [ ] Pre-built Docker images for Raspberry Pi / ARM64
 
-> 🚀 **The code is being prepared for open-source release.** The MIT license gives you freedom to use, modify, and distribute NEXUS for any purpose — personal, commercial, or educational.
+> 🚀 **NEXUS is 100% free and open-source.** The MIT license gives you the freedom to run, modify, and distribute the project for any purpose — personal, educational, or commercial.
 
 ---
 
@@ -584,8 +584,8 @@ This repository is currently under active development and being prepared for pub
 ---
 
 <p align="center">
-  <strong>Built by Saar Labs</strong><br />
-  <em>India's first fully self-hostable multi-agent AI orchestration platform</em><br />
+  <strong>An Open-Source Project by Saar Labs</strong><br />
+  <em>A community-driven, fully self-hostable multi-agent AI orchestration platform</em><br />
   <em>Run it anywhere. Own everything. Trust nothing but your own hardware.</em>
 </p>
 

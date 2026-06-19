@@ -1,3 +1,6 @@
 /server
 /client
 /.env
+/openclaw/deploy-openclaw.sh
+/openclaw/run-openclaw.sh
+/openclaw/deploy-openclaw.sh
